@@ -18,7 +18,7 @@ matrix:
   allow_failures:
     - php: nightly
 
-install: composer install --prefer-dist --no-interaction $COMPOSER_FLAGS
+install: composer update --prefer-dist --no-interaction $COMPOSER_FLAGS
 
 script: vendor/bin/phpunit
 

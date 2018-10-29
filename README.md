@@ -6,6 +6,7 @@
 [![GitHub license](https://img.shields.io/github/license/OneGuardSolutions/expression-language-extensions.svg)](https://github.com/OneGuardSolutions/expression-language-extensions/blob/master/LICENSE)
 [![Packagist](https://img.shields.io/packagist/v/oneguard/expression-language-extensions.svg)](https://packagist.org/packages/oneguard/expression-language-extensions)
 [![Packagist](https://img.shields.io/packagist/dt/oneguard/expression-language-extensions.svg)](https://packagist.org/packages/oneguard/expression-language-extensions)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/oneguard/expression-language-extensions.svg)](https://packagist.org/packages/oneguard/expression-language-extensions)
 
 ## Installation
 
