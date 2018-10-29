@@ -1,0 +1,23 @@
+language: php
+
+cache:
+  directories:
+    - "$HOME/.composer/cache"
+    - vendor
+
+matrix:
+  fast_finish: true
+  include:
+    - php: '7.1'
+      env:
+        - COMPOSER_FLAGS="--prefer-lowest"
+    - php: '7.1'
+    - php: '7.2'
+    - php: 'nightly'
+
+install: composer install --prefer-dist --no-interaction
+
+script: vendor/bin/phpunit
+
+after_success:
+  - travis_retry vendor/bin/php-coveralls

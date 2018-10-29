@@ -1,0 +1,31 @@
+version: "2"
+
+plugins:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - php
+  markdownlint:
+    enabled: true
+  phpcodesniffer:
+    enabled: true
+    checks:
+      PSR2 Classes ClassDeclaration OpenBraceNewLine:
+        enabled: false
+      Squiz Functions MultiLineFunctionDeclaration BraceOnSameLine:
+        enabled: false
+      PSR2 ControlStructures ControlStructureSpacing SpacingAfterOpenBrace:
+        enabled: false
+  phpmd:
+    enabled: true
+    checks:
+      CleanCode/ElseExpression:
+        enabled: false
+      CleanCode/StaticAccess:
+        enabled: false
+  sonar-php:
+    enabled: true
+    config:
+      tests_patterns:
+        - tests/**

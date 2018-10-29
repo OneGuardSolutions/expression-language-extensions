@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+
+  php:
+    image: oneguard/php:7.2-cli-dev
+    volumes:
+      - './:/src/'
+    working_dir: /src/
