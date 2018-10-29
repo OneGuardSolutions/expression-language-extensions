@@ -24,6 +24,8 @@ plugins:
         enabled: false
       CleanCode/StaticAccess:
         enabled: false
+      Naming/LongVariable:
+        enabled: false
   sonar-php:
     enabled: true
     config:
